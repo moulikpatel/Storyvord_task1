@@ -2,7 +2,7 @@ import React from "react";
 import { useCart } from "@/context/CartContext";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import {  ArrowLeft, DollarSign } from "lucide-react";
+import { ArrowLeft, DollarSign } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
@@ -60,6 +60,7 @@ const Cart = () => {
           ))}
         </div>
       )}
+      {/* Total cart details */}
       {cart.length > 0 && (
         <div className="mt-6 p-4 border-t bg-white shadow-md dark:text-black rounded-md sticky bottom-0">
           <div className="flex justify-between px-4 py-2">

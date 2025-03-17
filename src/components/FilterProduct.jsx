@@ -9,7 +9,7 @@ import {
 import { useProduct } from "../context/ProductContext";
 
 const FilterProduct = () => {
-  
+
   const { categories, setCategory, setPrice } = useProduct();
 
   return (
@@ -19,7 +19,7 @@ const FilterProduct = () => {
           <SelectValue placeholder="Category" />
         </SelectTrigger>
         <SelectContent>
-          <SelectItem value="all">All</SelectItem> {/* FIXED HERE */}
+          <SelectItem value="all">All</SelectItem> 
           {categories.map((cat) => (
             <SelectItem key={cat} value={cat}>
               {cat}

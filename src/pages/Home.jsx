@@ -51,6 +51,8 @@ const Home = () => {
           </p>
         )}
       </div>
+      
+      {/* pagination */}
       {totalPages > 1 && (
         <div className="flex justify-center items-center m-6 gap-2">
           <Button
